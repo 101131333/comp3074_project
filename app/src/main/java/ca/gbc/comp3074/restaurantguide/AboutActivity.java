@@ -1,5 +1,6 @@
 package ca.gbc.comp3074.restaurantguide;
 
+<<<<<<< HEAD
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +8,11 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import java.util.Objects;
+=======
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+>>>>>>> f681f75... add about activity, customize action bar
 
 public class AboutActivity extends AppCompatActivity {
 
@@ -14,6 +20,7 @@ public class AboutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
+<<<<<<< HEAD
 
         // set action bar
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
@@ -25,5 +32,7 @@ public class AboutActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         onBackPressed();
         return true;
+=======
+>>>>>>> f681f75... add about activity, customize action bar
     }
 }
