@@ -21,7 +21,7 @@ public class splash_screen extends AppCompatActivity {
     ImageView image;
     ProgressBar progress;
 
-    private static int SPLASH_SCREEN = 6000; // 5sec to MainActivity
+    private static int SPLASH_SCREEN = 6000; // 6sec to MainActivity
     private ProgressBar progressBar;
     private TextView loading;
     private int status = 0;
@@ -32,7 +32,7 @@ public class splash_screen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // hide status and action bar
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash_screen);
 
         // Animations

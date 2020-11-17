@@ -4,19 +4,19 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="Restaurant Guide"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".splash_screen">
+        <activity android:name=".AboutActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".splash_screen" android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"> </activity>
+        <activity android:name=".MainActivity" android:theme="@style/AppTheme.Main">
+
+        </activity>
     </application>
 
 </manifest>
