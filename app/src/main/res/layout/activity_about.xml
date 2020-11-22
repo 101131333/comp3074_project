@@ -138,7 +138,7 @@
         android:id="@+id/copyright"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="30dp"
         android:text="© 2020"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="17dp"
