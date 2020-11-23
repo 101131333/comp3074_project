@@ -1,0 +1,50 @@
+<resources>
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here.
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+           -->
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+
+    </style>
+
+    <style name="MyActionBar"
+        parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/colorActionBar</item>
+        <item name="background">@color/colorActionBar</item>
+
+        <item name="android:icon">@mipmap/resto_logo_foreground</item>
+        <item name="logo">@mipmap/resto_logo_foreground</item>
+        <item name="displayOptions">useLogo|showHome|showTitle</item>
+    </style>
+
+
+    <!-- Action Bar Style for Main Activity -->
+    <style name="AppTheme.Main" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:actionBarStyle">@style/MainActionBar</item>
+        <item name="actionBarStyle">@style/MainActionBar</item>
+    </style>
+
+    <style name="MainActionBar"
+        parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/colorActionBar</item>
+        <item name="background">@color/colorActionBar</item>
+        <item name="android:icon">@mipmap/resto_logo_foreground</item>
+        <item name="android:layout_marginLeft">-30dp</item>
+        <item name="logo">@mipmap/resto_logo_foreground</item>
+        <item name="displayOptions">useLogo|showHome|showTitle</item>
+    </style>
+
+
+    <!-- remove action bar of splash screen -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>
