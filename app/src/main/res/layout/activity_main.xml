@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
 <<<<<<< HEAD
+<<<<<<< HEAD
     />
 =======
     >
@@ -22,3 +23,6 @@
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 >>>>>>> f681f75... add about activity, customize action bar
+=======
+    />
+>>>>>>> 82d776d... Add Back Arrow in AboutActivity

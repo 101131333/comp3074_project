@@ -1,6 +1,9 @@
 package ca.gbc.comp3074.restaurantguide;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 82d776d... Add Back Arrow in AboutActivity
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,11 +11,14 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import java.util.Objects;
+<<<<<<< HEAD
 =======
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 >>>>>>> f681f75... add about activity, customize action bar
+=======
+>>>>>>> 82d776d... Add Back Arrow in AboutActivity
 
 public class AboutActivity extends AppCompatActivity {
 
@@ -21,6 +27,9 @@ public class AboutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 82d776d... Add Back Arrow in AboutActivity
 
         // set action bar
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
@@ -32,7 +41,10 @@ public class AboutActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         onBackPressed();
         return true;
+<<<<<<< HEAD
 =======
 >>>>>>> f681f75... add about activity, customize action bar
+=======
+>>>>>>> 82d776d... Add Back Arrow in AboutActivity
     }
 }

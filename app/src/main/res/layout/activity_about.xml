@@ -139,10 +139,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:layout_marginTop="30dp"
 =======
         android:layout_marginTop="64dp"
 >>>>>>> f681f75... add about activity, customize action bar
+=======
+        android:layout_marginTop="30dp"
+>>>>>>> 82d776d... Add Back Arrow in AboutActivity
         android:text="© 2020"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="17dp"
