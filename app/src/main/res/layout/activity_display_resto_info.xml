@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayRestoInfo">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="345dp"
+            android:layout_height="54dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Restaurant Information"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textColor="#4e0a99"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.021" />
+
+        <TextView
+            android:id="@+id/lblRestoName"
+            android:layout_width="287dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_vertical"
+            android:text="Display Restaurant Name here"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textColor="#4e0a99"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.285"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header" />
+
+        <TextView
+            android:id="@+id/lblAddress"
+            android:layout_width="103dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_vertical"
+            android:text="Address:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textColor="#771C1C"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblRestoName" />
+
+        <TextView
+            android:id="@+id/txtStreetAddress"
+            android:layout_width="220dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="36dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:text="Display Street Address here"
+            android:textColor="#8A8686"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/lblAddress"
+            app:layout_constraintTop_toBottomOf="@+id/lblRestoName" />
+
+        <TextView
+            android:id="@+id/txtCityAddress"
+            android:layout_width="124dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="36dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:text="Display City here"
+            android:textColor="#8A8686"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/txtCountryAddress"
+            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtStreetAddress" />
+
+        <TextView
+            android:id="@+id/txtCountryAddress"
+            android:layout_width="115dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:text="Display Country here"
+            android:textColor="#8A8686"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/txtPostalAddress"
+            app:layout_constraintTop_toTopOf="@+id/txtPostalAddress" />
+
+        <TextView
+            android:id="@+id/txtPostalAddress"
+            android:layout_width="83dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="36dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:text="Display Postal Code here"
+            android:textColor="#8A8686"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtStreetAddress" />
+
+        <Button
+            android:id="@+id/btnMap"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="54dp"
+            android:backgroundTint="#9f71ad"
+            android:text="Map"
+            android:textColor="#f3ebf5"
+            app:layout_constraintEnd_toStartOf="@+id/btnDirections"
+            app:layout_constraintHorizontal_bias="0.797"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblAddress" />
+
+        <Button
+            android:id="@+id/btnDirections"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="64dp"
+            android:backgroundTint="#9f71ad"
+            android:text="Directions"
+            android:textColor="#f3ebf5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCityAddress" />
+
+        <TextView
+            android:id="@+id/lblTag"
+            android:layout_width="103dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="36dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_vertical"
+            android:text="Tag:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textColor="#771C1C"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/txtTag"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblPhone" />
+
+        <TextView
+            android:id="@+id/txtTag"
+            android:layout_width="220dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="36dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:inputType="textPostalAddress"
+            android:text="Display tag here"
+            android:textColor="#8A8686"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPhone" />
+
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="36dp"
+            android:backgroundTint="#9C27B0"
+            android:gravity="center_vertical"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:theme="@style/RatingBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTag" />
+
+        <TextView
+            android:id="@+id/lblRate"
+            android:layout_width="70dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_vertical"
+            android:text="Rate:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textColor="#771C1C"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/rating"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblTag" />
+
+        <TextView
+            android:id="@+id/lblPhone"
+            android:layout_width="90dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="36dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_vertical"
+            android:text="Phone:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textColor="#771C1C"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/txtPhone"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMap" />
+
+        <TextView
+            android:id="@+id/txtPhone"
+            android:layout_width="220dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="36dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:text="Display Phone here"
+            android:textColor="#8A8686"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnDirections" />
+
+        <TextView
+            android:id="@+id/lblDescription"
+            android:layout_width="150dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="36dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_vertical"
+            android:text="Description:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textColor="#771C1C"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblRate" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="340dp"
+            android:layout_height="74dp"
+            android:layout_marginStart="34dp"
+            android:inputType="text|textMultiLine"
+            android:gravity="center_vertical"
+            android:text="Display Description here"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblDescription" />
+
+        <TextView
+            android:id="@+id/lblShare"
+            android:layout_width="150dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="36dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_vertical"
+            android:text="Share:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textColor="#771C1C"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDescription" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="20dp"
+            android:background="@mipmap/logo_email_foreground"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblShare" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="20dp"
+            android:background="@mipmap/logo_facebook_foreground"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+            app:layout_constraintTop_toBottomOf="@+id/lblShare" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="80dp"
+            android:background="@mipmap/logo_twitter_foreground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblShare" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

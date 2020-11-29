@@ -12,8 +12,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-import java.util.Objects;
-
 //TODO LIST:
 //TODO 1. function of button Direction, need to be fixed. The current location was wrong in the direction when running this function.
 //TODO 2. function of Rate
@@ -69,11 +67,11 @@ public class TimHortons extends AppCompatActivity {
     }
 
 
-    // show the menu of menu_rest_info_page in TimHortons
+    // show the menu of resto_info_menu in TimHortons
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inf = getMenuInflater();
-        inf.inflate(R.menu.menu_rest_info_page, menu);
+        inf.inflate(R.menu.resto_info_menu, menu);
         return true;
     }
 

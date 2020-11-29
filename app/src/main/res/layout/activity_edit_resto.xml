@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddNewResto">
+    tools:context=".DisplayRestoInfo">
+    ools:context=".AddNewResto">
 
     <TextView
         android:id="@+id/header"
         android:layout_width="303dp"
         android:layout_height="50dp"
         android:fontFamily="sans-serif-medium"
-        android:text="Add New Restaurant"
+        android:text="Edit Restaurant Info"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         android:textColor="#4e0a99"
@@ -46,7 +47,6 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="48dp"
         android:ems="10"
-        android:hint="Name (e.g. Tim Hortons)"
         android:inputType="textPersonName"
         android:textColor="#8A8686"
         android:textSize="16sp"
@@ -78,7 +78,6 @@
         android:layout_marginEnd="48dp"
         android:ems="10"
         android:inputType="textPostalAddress"
-        android:hint="Street (e.g. 220 Yonge St.)"
         android:textColor="#8A8686"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,7 +93,6 @@
         android:ems="10"
         android:gravity="center_vertical"
         android:inputType="textPersonName"
-        android:hint="City"
         android:textColor="#8A8686"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -108,7 +106,6 @@
         android:ems="10"
         android:gravity="center_vertical"
         android:inputType="textPersonName"
-        android:hint="Country"
         android:textColor="#8A8686"
         android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/txtPostalAddress"
@@ -123,7 +120,6 @@
         android:layout_marginEnd="48dp"
         android:ems="10"
         android:inputType="textPostalAddress"
-        android:hint="Post Code"
         android:textColor="#8A8686"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -154,7 +150,6 @@
         android:layout_marginEnd="48dp"
         android:ems="10"
         android:inputType="phone"
-        android:hint="Phone (416-598-8560)"
         android:textColor="#8A8686"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -217,8 +212,8 @@
         android:numStars="5"
         android:rating="0.0"
         android:stepSize="0.5"
-        app:layout_constraintEnd_toEndOf="parent"
         android:theme="@style/RatingBar"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTags" />
 
     <TextView
@@ -244,7 +239,6 @@
         android:layout_marginTop="5dp"
         android:gravity="top"
         android:inputType="text|textMultiLine"
-        android:hint="Please describe the restaurant..."
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

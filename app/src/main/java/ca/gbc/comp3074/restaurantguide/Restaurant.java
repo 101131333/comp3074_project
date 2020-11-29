@@ -1,6 +1,6 @@
 package ca.gbc.comp3074.restaurantguide;
 
-public class Restaurant {
+public class Restaurant{
 
     private String name;
     private String street;
