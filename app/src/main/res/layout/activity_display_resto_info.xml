@@ -24,17 +24,17 @@
 
         <TextView
             android:id="@+id/lblRestoName"
-            android:layout_width="287dp"
+            android:layout_width="187dp"
             android:layout_height="30dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="5dp"
             android:fontFamily="sans-serif-medium"
             android:gravity="center_vertical"
-            android:text="Display Restaurant Name here"
+            android:text="Restaurant Name"
             android:textAppearance="@style/TextAppearance.AppCompat.Display3"
             android:textColor="#4e0a99"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.285"
+            app:layout_constraintHorizontal_bias="0.16"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/header" />
 
@@ -53,15 +53,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lblRestoName" />
 
-        <TextView
+        <EditText
             android:id="@+id/txtStreetAddress"
             android:layout_width="220dp"
             android:layout_height="46dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="36dp"
             android:ems="10"
-            android:gravity="center_vertical"
-            android:text="Display Street Address here"
+            android:inputType="textPostalAddress"
             android:textColor="#8A8686"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -69,42 +68,27 @@
             app:layout_constraintStart_toEndOf="@+id/lblAddress"
             app:layout_constraintTop_toBottomOf="@+id/lblRestoName" />
 
-        <TextView
+        <EditText
             android:id="@+id/txtCityAddress"
-            android:layout_width="124dp"
+            android:layout_width="140dp"
             android:layout_height="46dp"
-            android:layout_marginStart="36dp"
             android:ems="10"
             android:gravity="center_vertical"
-            android:text="Display City here"
-            android:textColor="#8A8686"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/txtCountryAddress"
-            app:layout_constraintHorizontal_bias="0.058"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtStreetAddress" />
-
-        <TextView
-            android:id="@+id/txtCountryAddress"
-            android:layout_width="115dp"
-            android:layout_height="46dp"
-            android:layout_marginEnd="8dp"
-            android:ems="10"
-            android:gravity="center_vertical"
-            android:text="Display Country here"
+            android:inputType="textPersonName"
             android:textColor="#8A8686"
             android:textSize="16sp"
             app:layout_constraintEnd_toStartOf="@+id/txtPostalAddress"
-            app:layout_constraintTop_toTopOf="@+id/txtPostalAddress" />
+            app:layout_constraintHorizontal_bias="0.94"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtStreetAddress" />
 
-        <TextView
+        <EditText
             android:id="@+id/txtPostalAddress"
-            android:layout_width="83dp"
+            android:layout_width="70dp"
             android:layout_height="46dp"
             android:layout_marginEnd="36dp"
             android:ems="10"
-            android:gravity="center_vertical"
-            android:text="Display Postal Code here"
+            android:inputType="textPostalAddress"
             android:textColor="#8A8686"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -115,9 +99,8 @@
             android:layout_width="130dp"
             android:layout_height="50dp"
             android:layout_marginTop="54dp"
-            android:backgroundTint="#9f71ad"
+            android:backgroundTint="#8BC34A"
             android:text="Map"
-            android:textColor="#f3ebf5"
             app:layout_constraintEnd_toStartOf="@+id/btnDirections"
             app:layout_constraintHorizontal_bias="0.797"
             app:layout_constraintStart_toStartOf="parent"
@@ -129,9 +112,8 @@
             android:layout_height="50dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="64dp"
-            android:backgroundTint="#9f71ad"
+            android:backgroundTint="#8BC34A"
             android:text="Directions"
-            android:textColor="#f3ebf5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtCityAddress" />
 
@@ -151,15 +133,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lblPhone" />
 
-        <TextView
+        <EditText
             android:id="@+id/txtTag"
             android:layout_width="220dp"
             android:layout_height="46dp"
             android:layout_marginEnd="36dp"
             android:ems="10"
-            android:gravity="center_vertical"
             android:inputType="textPostalAddress"
-            android:text="Display tag here"
             android:textColor="#8A8686"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -171,12 +151,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="36dp"
-            android:backgroundTint="#9C27B0"
+            android:backgroundTint="#f00"
             android:gravity="center_vertical"
-            android:isIndicator="true"
+            android:isIndicator="false"
             android:numStars="5"
             android:stepSize="0.5"
-            android:theme="@style/RatingBar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtTag" />
 
@@ -213,14 +192,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnMap" />
 
-        <TextView
+        <EditText
             android:id="@+id/txtPhone"
             android:layout_width="220dp"
             android:layout_height="46dp"
             android:layout_marginEnd="36dp"
             android:ems="10"
-            android:gravity="center_vertical"
-            android:text="Display Phone here"
+            android:inputType="phone"
             android:textColor="#8A8686"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -240,14 +218,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lblRate" />
 
-        <TextView
+        <EditText
             android:id="@+id/txtDescription"
             android:layout_width="340dp"
             android:layout_height="74dp"
             android:layout_marginStart="34dp"
+            android:gravity="top"
             android:inputType="text|textMultiLine"
-            android:gravity="center_vertical"
-            android:text="Display Description here"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"

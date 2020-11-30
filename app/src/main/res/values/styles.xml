@@ -47,9 +47,4 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <!-- customize color of rating bar -->
-    <style name="RatingBar" parent="Theme.AppCompat">
-        <item name="colorControlNormal">#b9a6bf</item>
-        <item name="colorControlActivated">#9f71ad</item>
-    </style>
 </resources>

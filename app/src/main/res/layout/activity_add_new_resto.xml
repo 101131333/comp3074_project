@@ -46,7 +46,6 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="48dp"
         android:ems="10"
-        android:hint="Name (e.g. Tim Hortons)"
         android:inputType="textPersonName"
         android:textColor="#8A8686"
         android:textSize="16sp"
@@ -78,52 +77,35 @@
         android:layout_marginEnd="48dp"
         android:ems="10"
         android:inputType="textPostalAddress"
-        android:hint="Street (e.g. 220 Yonge St.)"
         android:textColor="#8A8686"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtName" />
 
-
     <EditText
         android:id="@+id/txtCityAddress"
-        android:layout_width="135dp"
-        android:layout_height="43dp"
+        android:layout_width="194dp"
+        android:layout_height="44dp"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:gravity="center_vertical"
         android:inputType="textPersonName"
-        android:hint="City"
         android:textColor="#8A8686"
         android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtPostalAddress"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblAddress" />
 
     <EditText
-        android:id="@+id/txtCountryAddress"
-        android:layout_width="111dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:gravity="center_vertical"
-        android:inputType="textPersonName"
-        android:hint="Country"
-        android:textColor="#8A8686"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/txtPostalAddress"
-        app:layout_constraintStart_toEndOf="@+id/txtCityAddress"
-        app:layout_constraintTop_toBottomOf="@+id/txtStreetAddress" />
-
-    <EditText
         android:id="@+id/txtPostalAddress"
-        android:layout_width="73dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="119dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="48dp"
         android:ems="10"
         android:inputType="textPostalAddress"
-        android:hint="Post Code"
         android:textColor="#8A8686"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -154,7 +136,6 @@
         android:layout_marginEnd="48dp"
         android:ems="10"
         android:inputType="phone"
-        android:hint="Phone (416-598-8560)"
         android:textColor="#8A8686"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -218,7 +199,6 @@
         android:rating="0.0"
         android:stepSize="0.5"
         app:layout_constraintEnd_toEndOf="parent"
-        android:theme="@style/RatingBar"
         app:layout_constraintTop_toBottomOf="@+id/txtTags" />
 
     <TextView
@@ -244,7 +224,6 @@
         android:layout_marginTop="5dp"
         android:gravity="top"
         android:inputType="text|textMultiLine"
-        android:hint="Please describe the restaurant..."
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -255,10 +234,9 @@
         android:id="@+id/btnSave"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginTop="15dp"
-        android:backgroundTint="#9f71ad"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#8BC34A"
         android:text="Save"
-        android:textColor="#f3ebf5"
         app:layout_constraintEnd_toStartOf="@+id/btnCancel"
         app:layout_constraintHorizontal_bias="0.709"
         app:layout_constraintStart_toStartOf="parent"
@@ -270,10 +248,18 @@
         android:layout_height="50dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="80dp"
-        android:backgroundTint="#9f71ad"
+        android:backgroundTint="#8BC34A"
         android:text="Cancel"
-        android:textColor="#f3ebf5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtDescription" />
+
+    <ListView
+        android:id="@+id/lstView"
+        android:layout_width="182dp"
+        android:layout_height="237dp"
+        android:layout_marginTop="372dp"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        tools:layout_editor_absoluteX="213dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
